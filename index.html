@@ -93,6 +93,22 @@
             right: 25px;
             font-family: Arial, sans-serif;
         }
+        /* CSS untuk background gambar pada div */
+.div-background {
+    width: 100%;
+    height: 100vh; /* Menyesuaikan tinggi div dengan ukuran layar */
+    background-image: url('path-to-your-image.jpg'); /* Ganti dengan URL gambar */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Agar gambar menutupi seluruh area div */
+}
+
+/* CSS untuk teks di dalam div */
+.div-background h1 {
+    color: white; /* Ganti warna teks sesuai keinginan */
+    text-align: center;
+    font-size: 50px;
+}
 
         .close-btn:hover,
         .close-btn:focus {
@@ -413,12 +429,12 @@ footer {
           <div class="musicid" ><br>
             <h2 class="h1">Music Section</h2>
             <p class="font">Anda pusing, banyak masalah, putus asa, coba klik tombol music dibawah!.</p>
-            <button id="playButton">Play Music</button><br><br>
+       <!-- <button id="playButton">Play Music</button><br><br>
             <br> <a href="visual.html"><button id="payButton">Music visual</button></a>
 <audio id="audioPlayer" preload="auto" style="display: none;">
     <source src="music.mp3" type="audio/mp3">
     Your browser does not support the audio element.
-</audio>
+</audio>-->
  
         </div>
         
@@ -467,6 +483,10 @@ footer {
     <br>
     <br>
       <!-- Tombol mengambang -->
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
   <a href="https://wa.me/6283817779643" class="floating-btn" target="_blank">
     <img src="walg.png" alt="WhatsApp Logo">
   </a>
